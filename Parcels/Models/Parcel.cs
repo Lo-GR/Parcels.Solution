@@ -25,5 +25,17 @@ namespace Parcels.Models
     {
       return _instances;
     }
+
+    public int CalcVolume()
+    {
+      return Height * Width * Length;
+    }
+
+    public int GetPrice()
+    {
+      int price = 0;
+      price = (Height * 3) + (Width * 2) + (Length * 3);
+      return price;
+    }
   }
 }
