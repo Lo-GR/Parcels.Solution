@@ -1,14 +1,27 @@
-<form action="/parcels" method="post">
-  <label for="weight">Enter Weight</label>
-  <input id="weight" name="weight" type="number">
-  <label for="height">Enter Height</label>
-  <input id="height" name="height" type="number">
-  <label for="width">Enter Width</label>
-  <input id="width" name="width" type="number">
-  <label for="length">Enter Length</label>
-  <input id="length" name="length" type="number">
-  <label for="desc">Enter Description</label>
-  <input id="desc" name="desc" type="text">
-
-  <button type="submit">Submit</button>
-</form>
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Parcel Pal's</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+<div class="form-group">
+    <form action="/parcels" method="post">
+      <label for="weight">Enter Weight</label>
+      <input id="weight" name="weight" class="form-control" type="number" required>
+      <label for="height">Enter Height</label>
+      <input id="height" name="height" class="form-control" type="number" required>
+      <label for="width">Enter Width</label>
+      <input id="width" name="width" class="form-control" type="number" required>
+      <label for="length">Enter Length</label>
+      <input id="length" name="length" class="form-control" type="number" required>
+      <label for="desc">Enter Description</label>
+      <input id="desc" name="desc" class="form-control" type="text" required>
+      <label for="subButton">Submit</label>
+      <button type="submit" name="subButton" class="form-control btn btn-outline-success">Submit</button>
+    </form>
+    </div>
+</div>
+</body>
