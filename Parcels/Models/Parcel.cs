@@ -5,14 +5,18 @@ namespace Parcels.Models
     public int Weight {get; set;}
 
     public int Height {get; set;}
+    public int Length {get; set;}
     public int Width {get; set;}
 
-    public Parcel(int weight, int height, int width)
+    public string Description {get; set;}
+    public Parcel(int weight, int height, int width, int length, string desc)
     {
       Weight = weight;
       Height = height;
       Width = width;
-      
+      Length = length;
+      Description = desc;
+
     }
   }
 }
