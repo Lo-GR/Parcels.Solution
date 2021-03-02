@@ -20,7 +20,10 @@ namespace Parcels.Models
       Length = length;
       Description = desc;
       _instances.Add(this);
-
+    }
+    public static List<Parcel> GetAll()
+    {
+      return _instances;
     }
   }
 }

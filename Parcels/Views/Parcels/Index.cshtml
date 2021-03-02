@@ -1,0 +1,21 @@
+@using Parcels.Models;
+
+<h1>Parcels</h1>
+<ul>
+  @if (Model.Count == 0)
+  {
+    <p>There are no parcels in the list.</p>
+  }
+  @foreach (Parcel parcel in Model)
+  {
+    <h2>@parcel.Description</h2>
+    <h3>Dimensions</h3>
+    <li>Width: @parcel.Width</li>
+    <li>Height: @parcel.Height</li>
+    <li>Length: @parcel.Length</li>
+    <li>Weight: @parcel.Weight</li>
+    <h3>Total Cost</h3>
+    @* <li>@parcel.GetPrice()</li>     *@
+  }
+</ul>
+<a href="/parcels/new">Add New Parcel</a>
