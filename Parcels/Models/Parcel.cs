@@ -1,3 +1,6 @@
+// using System;
+using System.Collections.Generic;
+
 namespace Parcels.Models
 {
   public class Parcel
@@ -7,8 +10,8 @@ namespace Parcels.Models
     public int Height {get; set;}
     public int Length {get; set;}
     public int Width {get; set;}
-
     public string Description {get; set;}
+    private static List<Parcel> _instances = new List<Parcel> {};
     public Parcel(int weight, int height, int width, int length, string desc)
     {
       Weight = weight;
@@ -16,6 +19,7 @@ namespace Parcels.Models
       Width = width;
       Length = length;
       Description = desc;
+      _instances.Add(this);
 
     }
   }
