@@ -8,8 +8,8 @@ namespace Parcels.Models
     public int Weight {get; set;}
 
     public int Height {get; set;}
-    public int Length {get; set;}
     public int Width {get; set;}
+    public int Length {get; set;}
     public string Description {get; set;}
     private static List<Parcel> _instances = new List<Parcel> {};
     public Parcel(int weight, int height, int width, int length, string desc)
